@@ -18,7 +18,7 @@
       let variable = inputValue;
 
       // Construct the link with the variable at the end
-      let link = "https://djpartyepic.github.com/xss-lab/reflect" + encodeURIComponent(variable);
+      let link = "https://djpartyepic.github.com/xss-lab/reflect#" + encodeURIComponent(variable);
 
       // Open the link in a new tab
       window.open(link, "_blank");
