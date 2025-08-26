@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input Example</title>
+</head>
+<body>
+  <!-- Input field -->
+  <input type="text" id="userInput" placeholder="Enter Text">
+  <button onclick="openLink()">Reflect</button>
+
+  <script>
+    function openLink() {
+      // Get the input value
+      let inputValue = document.getElementById("userInput").value;
+
+      // Save it in a variable
+      let variable = inputValue;
+
+      // Construct the link with the variable at the end
+      let link = "https://djpartyepic.github.com/xss-lab/reflect" + encodeURIComponent(variable);
+
+      // Open the link in a new tab
+      window.open(link, "_blank");
+    }
+  </script>
+</body>
+</html>
